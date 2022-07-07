@@ -1,11 +1,52 @@
+
+<style>
+  ion-img {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin: auto;
+    margin-top: 30%;
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+
+  ion-content{
+--ion-background-color: white;
+}
+  ion-item{
+    width: 70%;
+    height: 3em;
+    margin: auto;
+    border-radius: 11px !important;
+    padding: auto;
+  }
+  ion-button{
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+</style>
 <ion-header>
-  <ion-toolbar>
+  <!--<ion-toolbar>
     <ion-title align="center">Welcome Page</ion-title>
-  </ion-toolbar>
-</ion-header>
+  </ion-toolbar>-->
+</ion-header> 
 
 <ion-content>
   <ion-card-header>
-    <ion-img src=".assets/images/logo.png" align="center"></ion-img>
+    <ion-img src="./assets/images/logo.png"></ion-img>
   </ion-card-header>
+<br>
+<ion-item>
+    <ion-label position="floating">Username</ion-label>
+    <ion-input></ion-input>
+</ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+<br>
+<ion-button expand="block" fill="outline" >SIGN IN</ion-button>
+  
 </ion-content>
