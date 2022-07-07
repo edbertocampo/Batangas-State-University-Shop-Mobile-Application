@@ -1,1 +1,1 @@
-# Batangas-State-University-Shop-Mobile-Application
+# <img align="left" width="100" height="100" src="https://user-images.githubusercontent.com/102471784/177694343-b9f156fe-f0c9-4c75-a863-0c891f878c1a.png"> Batangas State University Shop Mobile Application
