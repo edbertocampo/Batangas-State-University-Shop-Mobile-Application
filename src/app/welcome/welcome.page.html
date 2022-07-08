@@ -1,12 +1,16 @@
 <link href="https://www.dafontfree.net/embed/YWlsZXJvbi1oZWF2eS1yZWd1bGFyJmRhdGEvMTkxL2EvMTcyNTY0L2FpbGVyb24uaGVhdnkub3Rm" rel="stylesheet" type="text/css"/>
 <style>
-    
+  img {
+    padding-bottom: 0px;
+    display: block;
+  }
+  
   ion-img {
-    width: 170px;
-    height: 170px;
+    width: 185px;
+    height: 185px;
     display: block;
     margin: auto;
-    margin-top: 50%;
+    margin-top: 15%;
     border-radius: 25px !important;
     overflow: hidden;
 }
@@ -23,14 +27,29 @@
     border-radius: 25px !important;
     overflow: hidden;
     font-family: 'aileron-heavy', sans-serif;
+    font-weight: bolder;
     --ion-color-red-color: #bc2b3a;
   	--ion-color-red-color-rgb: 155,0,0;
   	--ion-color-red-color-contrast: #ffffff;
   	--ion-color-red-color-contrast-rgb: 255,255,255;
   	--ion-color-red-color-shade: #880000;
-  	--ion-color-red-color-tint: #a51a1a;
-    
+  	--ion-color-red-color-tint: #a51a1a;  
 }
+
+ion-icon {
+  width: 10%;
+  height: 4em;
+  margin: auto;
+  margin-top: 20%;
+  padding: 5px;
+  --ion-color-red-color: #bc2b3a;
+  --ion-color-red-color-rgb: 155,0,0;
+  --ion-color-red-color-contrast: #ffffff;
+  --ion-color-red-color-contrast-rgb: 255,255,255;
+  --ion-color-red-color-shade: #880000;
+  --ion-color-red-color-tint: #a51a1a;
+}
+
 .ion-color-red-color {
 	--ion-color-base: var(--ion-color-red-color);
 	--ion-color-base-rgb: var(--ion-color-red-color-rgb);
@@ -39,14 +58,12 @@
 	--ion-color-shade: var(--ion-color-red-color-shade);
 	--ion-color-tint: var(--ion-color-red-color-tint);
 }
+
+
 </style>
-<ion-header>
-  <!--<ion-toolbar>
-    <ion-title align="center">Welcome Page</ion-title>
-  </ion-toolbar>-->
-</ion-header> 
 
 <ion-content>
+  <img src="./assets/images/header.png"/>
   <ion-card-header>
     <ion-img src="./assets/images/logo.png"></ion-img>
   </ion-card-header>
@@ -56,11 +73,13 @@
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<ion-button color="red-color" expand="block">SHOP NOW</ion-button>
- 
+<ion-button color="red-color" expand="block">SHOP NOW</ion-button> 
 
+<center>
+<ion-icon name="logo-facebook" color="red-color"></ion-icon>
+<ion-icon name="logo-instagram" color="red-color"></ion-icon>
+<ion-icon name="logo-twitter" color="red-color"></ion-icon>
+</center>
 
 </ion-content>
