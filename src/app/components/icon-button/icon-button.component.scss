@@ -1,0 +1,25 @@
+ion-icon {
+    width: 10%;
+    height: 4em;
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 20%;
+    padding: 5px;
+    display: inline-block;
+
+    --ion-color-red-color: #bc2b3a;
+    --ion-color-red-color-rgb: 155,0,0;
+    --ion-color-red-color-contrast: #ffffff;
+    --ion-color-red-color-contrast-rgb: 255,255,255;
+    --ion-color-red-color-shade: #880000;
+    --ion-color-red-color-tint: #a51a1a;
+  } 
+  
+  .ion-color-red-color {
+      --ion-color-base: var(--ion-color-red-color);
+      --ion-color-base-rgb: var(--ion-color-red-color-rgb);
+      --ion-color-contrast: var(--ion-color-red-color-contrast);
+      --ion-color-contrast-rgb: var(--ion-color-red-color-contrast-rgb);
+      --ion-color-shade: var(--ion-color-red-color-shade);
+      --ion-color-tint: var(--ion-color-red-color-tint);
+  }
