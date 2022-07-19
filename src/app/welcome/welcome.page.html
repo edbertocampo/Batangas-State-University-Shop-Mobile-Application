@@ -66,7 +66,13 @@ ion-icon {
 	--ion-color-tint: var(--ion-color-red-color-tint);
 }
 
-
+ion-spinner {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: auto;
+  margin-top: 25%;
+}
 </style>
 
 <ion-content>
@@ -76,12 +82,11 @@ ion-icon {
   </ion-card-header>
 <br>
 <br>
-<br>
-<br>
-<br>
 
-<ion-button color="red-color" expand="block">SHOP  NOW</ion-button> 
-
+<div class ="flex-center">
+<ion-spinner name="crescent" color="success"></ion-spinner>
+</div>
+<br>
 <center>
 <ion-icon name="logo-facebook" color="red-color"></ion-icon>
 <ion-icon name="logo-instagram" color="red-color"></ion-icon>
