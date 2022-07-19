@@ -8,9 +8,9 @@
     <app-input label="Email" type="email"></app-input>
     <app-input label="Password" type="password"></app-input>
 
-    <app-button label= "Register"></app-button>
+    <app-button label= "Register" (click)="home()"></app-button>
   </form>
 
-<p class="footer-text">I'm already a member, <a routerLink="#">Sign In</a></p>
+<p class="footer-text">I'm already a member, <a routerLink="/login">Sign In</a></p>
 </ion-content>
 <img src="./assets/images/footer.png"/>
