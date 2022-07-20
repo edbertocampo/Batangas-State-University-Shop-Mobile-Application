@@ -1,11 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      HOME
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<style>
+  @font-face {
+    font-family: "aileron-heavy";
+    src: url('../assets/fonts/aileron.heavy.otf');
+    font-weight: 200;
+  }
+ 
+  @-webkit-keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+  img {
+    -webkit-animation:slide-in-blurred-top 1.5s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-top 1.5s cubic-bezier(.23,1.000,.32,1.000) both;
+    padding-bottom: 0px;
+    display: block;
+  }
 
+  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+  .welcome-text {
+    -webkit-animation:slide-in-bottom 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom 1s cubic-bezier(.25,.46,.45,.94) both;
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-top: 15%;
+    margin-left: 5%;
+    line-height: 15px;
+  }
+
+  .products {
+    margin-top: 25%;
+    width: 45%;
+  }
+
+  .pic {
+    height: 120px;
+    align-items: center;
+  }
+
+  ion-tabs {
+    position: sticky;
+    bottom: 0;
+  }
+</style>
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -13,10 +45,25 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Welcome</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <img src="./assets/images/header.png"/>
+
+  <div class="welcome-text">
+    <p>Welcome</p>
+    <p>to our</p>
+    <p style="color:red">University Shop!</p>
   </div>
+
+  <div>
+    <ion-card class="products">
+      <ion-item href="mug">
+    <ion-card-header>
+      <img src="./assets/images/mug1.png" class="pic"/>
+      <ion-card-subtitle>Php 150.00</ion-card-subtitle>
+      <ion-card-title>Spartan Mug</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+</div>
+
 
   <ion-tabs>
     <ion-tab-bar slot="bottom">

@@ -13,7 +13,7 @@ export class WelcomePage implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.router.navigate(['login']);
-    }, 9000)
+    }, 3000)
   }
 
 }

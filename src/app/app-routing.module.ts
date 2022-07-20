@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'mug',
+    loadChildren: () => import('./mug/mug.module').then( m => m.MugPageModule)
+  },
 
 ];
 
