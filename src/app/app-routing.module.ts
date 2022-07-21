@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'mug',
     loadChildren: () => import('./mug/mug.module').then( m => m.MugPageModule)
   },
+  {
+    path: 'tumbler',
+    loadChildren: () => import('./tumbler/tumbler.module').then( m => m.TumblerPageModule)
+  },
 
 ];
 

@@ -16,4 +16,8 @@ export class HomePage implements OnInit{
   openmug(){
     this.router.navigate(['mug'])
   }
+
+  opentumbler(){
+    this.router.navigate(['tumbler'])
+  }
 }

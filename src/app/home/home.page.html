@@ -12,20 +12,20 @@
     display: block;
   }
 
-  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+  @-webkit-keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}@keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}
   .welcome-text {
-    -webkit-animation:slide-in-bottom 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom 0.7s cubic-bezier(.25,.46,.45,.94) both;
+    -webkit-animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;
     font-family: 'aileron-heavy', sans-serif;
     font-size: 40px;
     font-weight:900;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 5%;
     line-height: 15px;
   }
 
   .products {
     margin-top: 5%;
-    width: 45%;
+    width: 100%;
   }
 
   .pic {
@@ -42,6 +42,12 @@
     margin-left: 5%;
     font-size: 18px;
   }
+
+  ion-row {
+    margin-right: 5%;
+  }
+
+
   
 </style>
 <ion-content [fullscreen]="true">
@@ -60,7 +66,8 @@
   </div>
 
   <div class="new-releases">
-    <p class="category">NEW RELEASES</p>
+    <ion-row>
+    <ion-col>
     <ion-card class="products">
       <ion-item (click)="openmug()">
     <ion-card-header>
@@ -69,7 +76,18 @@
       <ion-card-title>Spartan Mug</ion-card-title>
    </ion-card-header></ion-item>
   </ion-card>
-
+  </ion-col>
+  <ion-col>
+    <ion-card class="products">
+      <ion-item (click)="opentumbler()">
+    <ion-card-header>
+      <img src="./assets/images/tumbler.png" class="pic"/>
+      <ion-card-subtitle>Php 200.00</ion-card-subtitle>
+      <ion-card-title>Spartan Tumbler</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  </ion-row>
 </div>
 
   <ion-tabs>
