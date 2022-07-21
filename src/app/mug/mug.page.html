@@ -1,9 +1,90 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>mug</ion-title>
-  </ion-toolbar>
-</ion-header>
+<style>
+  @font-face {
+    font-family: "aileron-heavy";
+    src: url('../assets/fonts/aileron.heavy.otf');
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: "tex-gyre-adventor";
+    src: url('../assets/fonts/textgyreadventor-regular.otf');
+    font-weight: 200;
+  }
+
+  .text {
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 35px;
+    font-weight:900;
+    margin-left: 20px;
+  }
+
+  .pic {
+    box-shadow:5px 5px 5px #999;
+  }
+
+  p {
+    line-height: 5px;
+  }
+
+  .normal {
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 20px;
+    font-weight:900;
+    color: crimson;
+  }
+
+  .heading {
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 17px;
+    font-weight:900;
+    padding-top: 15px;
+    color: antiquewhite;
+  }
+
+  li {
+    font-family: 'tex-gyre-adventor', sans-serif;
+    font-size: 15px;
+    font-weight:100;
+    line-height: 25px;
+    color: white;
+    margin-left: 15px;
+  }
+
+  .details {
+    background-color: crimson;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    height: 37%;
+  }
+
+  .button {
+    font-family: 'aileron-heavy', sans-serif;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: 25px;
+    margin-top: 3%;
+  }
+
+</style>
 
 <ion-content>
+    <img class="pic" src="./assets/images/mug1.png" style="width:100%">
 
+  <div class="text">
+    <center><p>SPARTAN MUG</p>
+    <p class="normal">₱ 150.00</p></center>
+    </div>
+  <div class="details">
+    <center><p class="heading">Product Details:</p></center> 
+    <li>11 oz ceramic mug</li>
+    <li>Dishwasher friendly, microwave safe</li>
+    <li>The front and back print area dimensions measure 2.943” x 2.553”</li>
+    <li>White base color</li>
+    <li>Poly-coated for sublimation print, ensuring vibrant print quality</li>
+
+    <ion-button class="button" (click)="home()">Back to Home</ion-button>
+    <ion-button class="button" (click)="home()">Add to Cart</ion-button>
+  </div>
+
+  
 </ion-content>

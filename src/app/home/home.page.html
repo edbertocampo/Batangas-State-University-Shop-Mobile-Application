@@ -24,7 +24,7 @@
   }
 
   .products {
-    margin-top: 25%;
+    margin-top: 5%;
     width: 45%;
   }
 
@@ -36,6 +36,11 @@
   ion-tabs {
     position: sticky;
     bottom: 0;
+  }
+
+  .category {
+    margin-left: 5%;
+    font-size: 18px;
   }
 </style>
 <ion-content [fullscreen]="true">
@@ -53,9 +58,10 @@
     <p style="color:red">University Shop!</p>
   </div>
 
-  <div>
+  <div class="new-releases">
+    <p class="category">NEW RELEASES</p>
     <ion-card class="products">
-      <ion-item href="mug">
+      <ion-item (click)="openmug()">
     <ion-card-header>
       <img src="./assets/images/mug1.png" class="pic"/>
       <ion-card-subtitle>Php 150.00</ion-card-subtitle>
@@ -64,13 +70,11 @@
   </ion-card>
 </div>
 
-
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="home">
         <ion-icon name="home"></ion-icon>
         <ion-label>Home</ion-label>
-        <ion-badge>6</ion-badge>
       </ion-tab-button>
   
       <ion-tab-button tab="category">
