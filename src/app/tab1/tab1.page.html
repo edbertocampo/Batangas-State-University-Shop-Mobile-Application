@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="./assets/images/header.png"/>
+
+  <div class="welcome-text">
+    <p class="name">Welcome</p>
+    <p class="name">to our</p>
+    <p class="uni-shop">University Shop!</p>
+  </div>
+
+  <div class="new-releases">
+    <ion-row>
+    <ion-col>
+    <ion-card class="products">
+      <ion-item (click)="openmug()">
+    <ion-card-header>
+      <img src="./assets/images/mug1.png" class="pic"/>
+      <ion-card-subtitle>Php 150.00</ion-card-subtitle>
+      <ion-card-title>Spartan Mug</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  <ion-col>
+    <ion-card class="products">
+      <ion-item (click)="opentumbler()">
+    <ion-card-header>
+      <img src="./assets/images/tumbler.png" class="pic"/>
+      <ion-card-subtitle>Php 200.00</ion-card-subtitle>
+      <ion-card-title>Spartan Tumbler</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  </ion-row>
+</div>

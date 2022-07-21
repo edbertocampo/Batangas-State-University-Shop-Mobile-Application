@@ -1,10 +1,6 @@
-<style>
-  @font-face {
-    font-family: "aileron-heavy";
-    src: url('../assets/fonts/aileron.heavy.otf');
-    font-weight: 200;
-  }
- 
+
+  
+  
   @-webkit-keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
   img {
     -webkit-animation:slide-in-blurred-top 0.8s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-top 0.8s cubic-bezier(.23,1.000,.32,1.000) both;
@@ -47,70 +43,13 @@
     margin-right: 5%;
   }
 
+  .welcome-text{
 
-  
-</style>
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <img src="./assets/images/header.png"/>
-
-  <div class="welcome-text">
-    <p>Welcome</p>
-    <p>to our</p>
-    <p style="color:red">University Shop!</p>
-  </div>
-
-  <div class="new-releases">
-    <ion-row>
-    <ion-col>
-    <ion-card class="products">
-      <ion-item (click)="openmug()">
-    <ion-card-header>
-      <img src="./assets/images/mug1.png" class="pic"/>
-      <ion-card-subtitle>Php 150.00</ion-card-subtitle>
-      <ion-card-title>Spartan Mug</ion-card-title>
-   </ion-card-header></ion-item>
-  </ion-card>
-  </ion-col>
-  <ion-col>
-    <ion-card class="products">
-      <ion-item (click)="opentumbler()">
-    <ion-card-header>
-      <img src="./assets/images/tumbler.png" class="pic"/>
-      <ion-card-subtitle>Php 200.00</ion-card-subtitle>
-      <ion-card-title>Spartan Tumbler</ion-card-title>
-   </ion-card-header></ion-item>
-  </ion-card>
-  </ion-col>
-  </ion-row>
-</div>
-
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-icon name="home"></ion-icon>
-        <ion-label>Home</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="category">
-        <ion-icon name="grid-outline"></ion-icon>
-        <ion-label>Category</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="cart">
-        <ion-icon name="cart"></ion-icon>
-        <ion-label>Cart</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="account">
-        <ion-icon name="person-circle-outline"></ion-icon>
-        <ion-label>Account</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-</ion-content>
+    .name{
+        font-family: Gilroy-Bold;
+    }
+    .uni-shop{
+        font-family: Gilroy-Semibold;
+        color: red;
+    }
+  }

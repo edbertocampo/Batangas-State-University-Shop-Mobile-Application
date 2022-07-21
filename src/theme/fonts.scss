@@ -4,13 +4,18 @@
 }
 
 @font-face {
-    font-family: Gilroy;
+    font-family: Gilroy-SemiBold;
     src: url(../assets/fonts/Gilroy-Semibold.ttf);
     font-weight: 600;
 }
 
 @font-face {
-    font-family: Gilroy;
+    font-family: Gilroy-Bold;
     src: url(../assets/fonts/Gilroy-Bold.ttf);
     font-weight: 700;
+}
+
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url("../assets/fonts/aileron.heavy.otf");
 }

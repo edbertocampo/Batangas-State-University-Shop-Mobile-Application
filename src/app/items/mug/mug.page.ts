@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tumbler',
-  templateUrl: './tumbler.page.html',
-  styleUrls: ['./tumbler.page.scss'],
+  selector: 'app-mug',
+  templateUrl: './mug.page.html',
+  styleUrls: ['./mug.page.scss'],
 })
-export class TumblerPage implements OnInit {
+export class MugPage implements OnInit {
 
   constructor(private router:Router) { }
 
@@ -14,6 +14,7 @@ export class TumblerPage implements OnInit {
   }
 
   home(){
-    this.router.navigate(['/home'])
+    this.router.navigate(['/tabs'])
   }
+
 }
