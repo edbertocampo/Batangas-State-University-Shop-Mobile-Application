@@ -21,18 +21,20 @@
   }
 
   .pic {
+    margin-top: 20px;
     box-shadow:5px 5px 5px #999;
   }
 
   p {
-    line-height: 5px;
+    line-height: 1px;
   }
 
   .normal {
     font-family: 'aileron-heavy', sans-serif;
     font-size: 20px;
     font-weight:900;
-    color: crimson;
+    color: darkred;
+    line-height: 1px;
   }
 
   .heading {
@@ -55,28 +57,51 @@
   @-webkit-keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}@keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}
   .details {
     -webkit-animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both;
-    background-color: crimson;
+    background-color: darkred;
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
-    height: 37%;
+    height: 31%;
   }
 
-  .button {
+  .back {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .cart {
     font-family: 'aileron-heavy', sans-serif;
     color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-left: 25px;
-    margin-top: 3%;
+    position: absolute;
+    right: 25px;
+    margin-top: 405px;
+    height: 8%;
+  }
+
+  #carticon {
+    font-size: 30px;
+    color: darkred;
+  }
+
+  .availability {
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 15px;
+    color: green;
+    padding-top: 5px;
   }
 
 </style>
 
 <ion-content>
     <img class="pic" src="./assets/images/mug1.png" style="width:100%">
+  <ion-button class="back" (click)="home()" color="light"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+  <ion-button class="cart" (click)="home()" color="light"><ion-icon name="cart" id="carticon"></ion-icon></ion-button>
 
   <div class="text">
-    <center><p>SPARTAN MUG</p>
-    <p class="normal">₱ 150.00</p></center>
+    <p>MUG</p>
+    <p class="normal">Php 150.00</p>
+    <p class="availability">In Stock</p>
     </div>
   <div class="details">
     <center><p class="heading">Product Details:</p></center> 
@@ -86,9 +111,6 @@
     <li>White base color</li>
     <li>Poly-coated for sublimation print, ensuring vibrant print quality</li>
 
-    <ion-button class="button" (click)="home()" color="success">Back to Home</ion-button>
-    <ion-button class="button" (click)="home()" color="success">Add to Cart</ion-button>
+    
   </div>
-
-  
 </ion-content>
