@@ -34,7 +34,39 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },  {
+    path: 'cap',
+    loadChildren: () => import('./items/cap/cap.module').then( m => m.CapPageModule)
+  },
+  {
+    path: 'hat',
+    loadChildren: () => import('./items/hat/hat.module').then( m => m.HatPageModule)
+  },
+  {
+    path: 'hoodie',
+    loadChildren: () => import('./items/hoodie/hoodie.module').then( m => m.HoodiePageModule)
+  },
+  {
+    path: 'mask',
+    loadChildren: () => import('./items/mask/mask.module').then( m => m.MaskPageModule)
+  },
+  {
+    path: 'planner',
+    loadChildren: () => import('./items/planner/planner.module').then( m => m.PlannerPageModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./items/calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./items/button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'paperbag',
+    loadChildren: () => import('./items/paperbag/paperbag.module').then( m => m.PaperbagPageModule)
   }
+
 ];
 @NgModule({
   imports: [

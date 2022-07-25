@@ -20,4 +20,36 @@ export class Tab1Page implements OnInit {
   opentumbler(){
     this.router.navigate(['tumbler'])
   }
+
+  openbutton(){
+    this.router.navigate(['button'])
+  }
+
+  opencalendar(){
+    this.router.navigate(['calendar'])
+  }
+
+  opencap(){
+    this.router.navigate(['cap'])
+  }
+
+  openhat(){
+    this.router.navigate(['hat'])
+  }
+
+  openhoodie(){
+    this.router.navigate(['hoodie'])
+  }
+
+  openmask(){
+    this.router.navigate(['mask'])
+  }
+
+  openpaperbag(){
+    this.router.navigate(['paperbag'])
+  }
+
+  openplanner(){
+    this.router.navigate(['planner'])
+  }
 }
