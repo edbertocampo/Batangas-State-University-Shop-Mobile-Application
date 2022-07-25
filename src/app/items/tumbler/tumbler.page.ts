@@ -16,4 +16,7 @@ export class TumblerPage implements OnInit {
   home(){
     this.router.navigate(['/tabs'])
   }
+  cart(){
+    this.router.navigate(['./tabs'])
+  }
 }

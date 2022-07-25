@@ -1,102 +1,30 @@
-<style>
-  @font-face {
-    font-family: "aileron-heavy";
-    src: url('../assets/fonts/aileron.heavy.otf');
-    font-weight: 200;
-  }
-
-  @font-face {
-    font-family: "tex-gyre-adventor";
-    src: url('../assets/fonts/textgyreadventor-regular.otf');
-    font-weight: 200;
-  }
-
-  @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
-  .text {
-    -webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
-    font-family: 'aileron-heavy', sans-serif;
-    font-size: 35px;
-    font-weight:900;
-    margin-left: 20px;
-  }
-
-  .pic {
-    margin-top: 20px;
-    box-shadow:5px 5px 5px #999;
-  }
-
-  p {
-    line-height: 1px;
-  }
-
-  .normal {
-    font-family: 'aileron-heavy', sans-serif;
-    font-size: 20px;
-    font-weight:900;
-    color: darkred;
-    line-height: 1px;
-  }
-
-  .heading {
-    font-family: 'aileron-heavy', sans-serif;
-    font-size: 17px;
-    font-weight:900;
-    padding-top: 15px;
-    color: antiquewhite;
-  }
-
-  li {
-    font-family: 'tex-gyre-adventor', sans-serif;
-    font-size: 15px;
-    font-weight:100;
-    line-height: 25px;
-    color: white;
-    margin-left: 15px;
-  }
-
-  @-webkit-keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}@keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}
-  .details {
-    -webkit-animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both;
-    background-color: darkred;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
-    height: 31%;
-  }
-
-  .back {
-    position:absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
-  .cart {
-    font-family: 'aileron-heavy', sans-serif;
-    color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    position: absolute;
-    right: 25px;
-    margin-top: 405px;
-    height: 8%;
-  }
-
-  #carticon {
-    font-size: 30px;
-    color: darkred;
-  }
-
-  .availability {
-    font-family: 'aileron-heavy', sans-serif;
-    font-size: 15px;
-    color: green;
-    padding-top: 5px;
-  }
-
-</style>
-
 <ion-content>
-    <img class="pic" src="./assets/images/mug1.png" style="width:100%">
+    <!-- <img class="pic" src="./assets/images/mug1.png" style="width:100%"> -->
+    <ion-slides [options] ="options" class="ion-margin-top">
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/mug1.png">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/mug2.png">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/mug3.png">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/images/mug4.png">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+    
   <ion-button class="back" (click)="home()" color="light"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
-  <ion-button class="cart" (click)="home()" color="light"><ion-icon name="cart" id="carticon"></ion-icon></ion-button>
+  <ion-button class="cart" (click)="cart()" color="light"><ion-icon name="cart" id="carticon"></ion-icon></ion-button>
 
   <div class="text">
     <p>MUG</p>
