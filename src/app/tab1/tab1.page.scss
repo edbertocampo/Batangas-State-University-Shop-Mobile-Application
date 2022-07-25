@@ -81,3 +81,21 @@
     margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .category{
+    -webkit-animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-top: 5%;
+    margin-left: 5%;
+    line-height: 1px;
+
+    .name{
+        font-family: Gilroy-Bold; 
+    }
+    .uni-shop{
+        font-family: Gilroy-Bold;
+        color: darkred;
+    }
+  }
