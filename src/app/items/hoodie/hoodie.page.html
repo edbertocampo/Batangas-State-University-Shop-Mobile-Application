@@ -1,6 +1,22 @@
 
 <ion-content>
-  <img class="pic" src="./assets/images/hoodie.png" style="width:100%">
+  <ion-slides [options] ="options" class="ion-margin-top">
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/hoodie.png">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/hoodie2.png">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/hoodie3.png">
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
   <ion-button class="back" (click)="home()" color="light"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
 <ion-button class="cart" (click)="home()" color="light"><ion-icon name="cart" id="carticon"></ion-icon></ion-button>
 
