@@ -60,4 +60,28 @@ export class Tab1Page implements OnInit {
   openwallet(){
     this.router.navigate(['wallet'])
   }
+
+  openbarong(){
+    this.router.navigate(['barong'])
+  }
+
+  openpants(){
+    this.router.navigate(['pants'])
+  }
+
+  openblouse(){
+    this.router.navigate(['blouse'])
+  }
+
+  openskirt(){
+    this.router.navigate(['skirt'])
+  }
+
+  openpeshirt(){
+    this.router.navigate(['peshirt'])
+  }
+
+  openpepants(){
+    this.router.navigate(['pepants'])
+  }
 }
