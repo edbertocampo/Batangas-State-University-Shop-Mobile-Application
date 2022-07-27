@@ -1,0 +1,77 @@
+<ion-content [fullscreen]="true">
+
+  <ion-button class="back" (click)="home()" color="light"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+<div class="welcome-text">
+  <p class="name">School</p>
+  <p class="uni-shop">Uniforms</p>
+</div>
+
+<div>
+  <ion-grid>
+  <ion-row>
+  <ion-col size="6">
+  <ion-card class="products">
+    <ion-item (click)="openbarong()">
+  <ion-card-header>
+    <img src="./assets/images/barong.jpg" class="pic"/>
+    <ion-card-subtitle>from Php 350.00</ion-card-subtitle>
+    <ion-card-title>College Barong</ion-card-title>
+ </ion-card-header></ion-item>
+</ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card class="products">
+    <ion-item (click)="openpants()">
+  <ion-card-header>
+    <img src="./assets/images/pants.jpg" class="pic"/>
+    <ion-card-subtitle>from Php 356.00</ion-card-subtitle>
+    <ion-card-title>College Pants</ion-card-title>
+ </ion-card-header></ion-item>
+</ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card class="products">
+    <ion-item (click)="openblouse()">
+  <ion-card-header>
+    <img src="./assets/images/blouse.jpg" class="pic"/>
+    <ion-card-subtitle>from Php 315.00</ion-card-subtitle>
+    <ion-card-title>College Blouse</ion-card-title>
+ </ion-card-header></ion-item>
+</ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card class="products">
+    <ion-item (click)="openskirt()">
+  <ion-card-header>
+    <img src="./assets/images/skirt.jpg" class="pic"/>
+    <ion-card-subtitle>from Php 230.00</ion-card-subtitle>
+    <ion-card-title>College Skirt</ion-card-title>
+ </ion-card-header></ion-item>
+</ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card class="products">
+    <ion-item (click)="openpeshirt()">
+  <ion-card-header>
+    <img src="./assets/images/pe.jpg" class="pic"/>
+    <ion-card-subtitle>Php 175.00</ion-card-subtitle>
+    <ion-card-title>PE Shirt</ion-card-title>
+ </ion-card-header></ion-item>
+</ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card class="products">
+    <ion-item (click)="openpepants()">
+  <ion-card-header>
+    <img src="./assets/images/pe.jpg" class="pic"/>
+    <ion-card-subtitle>Php 270.00</ion-card-subtitle>
+    <ion-card-title>PE Pants</ion-card-title>
+ </ion-card-header></ion-item>
+</ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+</div>
+
+</ion-content>

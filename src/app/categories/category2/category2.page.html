@@ -1,0 +1,77 @@
+<ion-content [fullscreen]="true">
+
+  <ion-button class="back" (click)="home()" color="light"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+<div class="welcome-text">
+  <p class="name">Student</p>
+    <p class="uni-shop">Essentials</p>
+  </div>
+
+  <div>
+    <ion-grid>
+    <ion-row>
+    <ion-col size="6">
+    <ion-card class="products">
+      <ion-item (click)="openplanner()">
+    <ion-card-header>
+      <img src="./assets/images/planner.png" class="pic"/>
+      <ion-card-subtitle>Php 190.00</ion-card-subtitle>
+      <ion-card-title>Spartan Planner</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card class="products">
+      <ion-item (click)="opencalendar()">
+    <ion-card-header>
+      <img src="./assets/images/calendar.png" class="pic"/>
+      <ion-card-subtitle>Php 250.00</ion-card-subtitle>
+      <ion-card-title>Spartan Calendar</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card class="products">
+      <ion-item (click)="openbutton()">
+    <ion-card-header>
+      <img src="./assets/images/button.png" class="pic"/>
+      <ion-card-subtitle>Php 70.00</ion-card-subtitle>
+      <ion-card-title>Spartan Button</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card class="products">
+      <ion-item (click)="openpaperbag()">
+    <ion-card-header>
+      <img src="./assets/images/paperbag.png" class="pic"/>
+      <ion-card-subtitle>Php 100.00</ion-card-subtitle>
+      <ion-card-title>Spartan PaperBag</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card class="products">
+      <ion-item (click)="openbackpack()">
+    <ion-card-header>
+      <img src="./assets/images/backpack.png" class="pic"/>
+      <ion-card-subtitle>Php 250.00</ion-card-subtitle>
+      <ion-card-title>Spartan Backpack</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card class="products">
+      <ion-item (click)="openwallet()">
+    <ion-card-header>
+      <img src="./assets/images/wallet.png" class="pic"/>
+      <ion-card-subtitle>Php 125.00</ion-card-subtitle>
+      <ion-card-title>Spartan Wallet</ion-card-title>
+   </ion-card-header></ion-item>
+  </ion-card>
+  </ion-col>
+  </ion-row>
+</ion-grid>
+
+</div>
+
+</ion-content>

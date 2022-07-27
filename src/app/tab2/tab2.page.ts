@@ -10,8 +10,20 @@ export class Tab2Page {
 
   constructor(private router:Router) {}
 
-  openmug(){
-    this.router.navigate(['mug'])
+  category1(){
+    this.router.navigate(['category1'])
+  }
+
+  category2(){
+    this.router.navigate(['category2'])
+  }
+
+  category3(){
+    this.router.navigate(['category3'])
+  }
+
+  category4(){
+    this.router.navigate(['category4'])
   }
 
 }

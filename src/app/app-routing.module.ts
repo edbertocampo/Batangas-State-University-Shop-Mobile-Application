@@ -97,6 +97,22 @@ const routes: Routes = [
   {
     path: 'pepants',
     loadChildren: () => import('./items/pepants/pepants.module').then( m => m.PepantsPageModule)
+  },
+  {
+    path: 'category1',
+    loadChildren: () => import('./categories/category1/category1.module').then( m => m.Category1PageModule)
+  },
+  {
+    path: 'category2',
+    loadChildren: () => import('./categories/category2/category2.module').then( m => m.Category2PageModule)
+  },
+  {
+    path: 'category3',
+    loadChildren: () => import('./categories/category3/category3.module').then( m => m.Category3PageModule)
+  },
+  {
+    path: 'category4',
+    loadChildren: () => import('./categories/category4/category4.module').then( m => m.Category4PageModule)
   }
 
 ];
