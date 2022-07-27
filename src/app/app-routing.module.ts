@@ -73,6 +73,30 @@ const routes: Routes = [
   {
     path: 'wallet',
     loadChildren: () => import('./items/wallet/wallet.module').then( m => m.WalletPageModule)
+  },
+  {
+    path: 'barong',
+    loadChildren: () => import('./items/barong/barong.module').then( m => m.BarongPageModule)
+  },
+  {
+    path: 'pants',
+    loadChildren: () => import('./items/pants/pants.module').then( m => m.PantsPageModule)
+  },
+  {
+    path: 'blouse',
+    loadChildren: () => import('./items/blouse/blouse.module').then( m => m.BlousePageModule)
+  },
+  {
+    path: 'skirt',
+    loadChildren: () => import('./items/skirt/skirt.module').then( m => m.SkirtPageModule)
+  },
+  {
+    path: 'peshirt',
+    loadChildren: () => import('./items/peshirt/peshirt.module').then( m => m.PeshirtPageModule)
+  },
+  {
+    path: 'pepants',
+    loadChildren: () => import('./items/pepants/pepants.module').then( m => m.PepantsPageModule)
   }
 
 ];
