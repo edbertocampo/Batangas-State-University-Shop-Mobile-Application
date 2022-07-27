@@ -52,4 +52,12 @@ export class Tab1Page implements OnInit {
   openplanner(){
     this.router.navigate(['planner'])
   }
+
+  openbackpack(){
+    this.router.navigate(['backpack'])
+  }
+
+  openwallet(){
+    this.router.navigate(['wallet'])
+  }
 }

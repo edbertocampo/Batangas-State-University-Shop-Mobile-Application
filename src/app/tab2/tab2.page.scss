@@ -46,6 +46,7 @@
     margin-left: 5%;
     margin-top: 57%;
     line-height: 1px;
+    height: 95%;
   }
     
   .name{
@@ -62,10 +63,9 @@
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     z-index: 100;
     position: absolute;
-    top: 40%;
-    width: 90%;
+    top: 80px;
+    width: 95%;
     border-radius: 20px;
-    margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -73,10 +73,9 @@
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     z-index: 100;
     position: absolute;
-    top: 60%;
-    width: 90%;
+    top: 220px;
+    width: 95%;
     border-radius: 20px;
-    margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -84,10 +83,9 @@
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     z-index: 100;
     position: absolute;
-    top: 80%;
-    width: 90%;
+    top: 360px;
+    width: 95%;
     border-radius: 20px;
-    margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -95,9 +93,9 @@
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     z-index: 100;
     position: absolute;
-    top: 100%;
-    width: 90%;
+    top: 500px;
+    width: 95%;
     border-radius: 20px;
-    margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+

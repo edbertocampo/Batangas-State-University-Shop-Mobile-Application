@@ -1,0 +1,32 @@
+
+<ion-content>
+  <ion-slides [options] ="options" class="ion-margin-top">
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/backpack.png">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/backpack2.png">
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  
+  <ion-button class="back" (click)="home()" color="light"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+<ion-button class="cart" (click)="home()" color="light"><ion-icon name="cart" id="carticon"></ion-icon></ion-button>
+
+<div class="text">
+  <p>Backpack</p>
+  <p class="normal">Php 250.00</p>
+  <p class="availability">In Stock</p>
+  </div>
+<div class="details">
+  <center><p class="heading">Product Details:</p></center> 
+  <li>Exterior: 100% polyester fibre</li>
+  <li>Interior：10% velboa, 90% polyester fibre</li>
+  <li>Size: 300 mm x 425 mm x 105mm</li>
+  <li>Weight: Approx. 525 g</li>
+</div>
+
+</ion-content>

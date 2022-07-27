@@ -65,6 +65,14 @@ const routes: Routes = [
   {
     path: 'paperbag',
     loadChildren: () => import('./items/paperbag/paperbag.module').then( m => m.PaperbagPageModule)
+  },
+  {
+    path: 'backpack',
+    loadChildren: () => import('./items/backpack/backpack.module').then( m => m.BackpackPageModule)
+  },
+  {
+    path: 'wallet',
+    loadChildren: () => import('./items/wallet/wallet.module').then( m => m.WalletPageModule)
   }
 
 ];
