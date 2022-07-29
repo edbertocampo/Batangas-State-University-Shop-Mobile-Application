@@ -33,3 +33,32 @@
     margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  
+  ion-card{
+    margin-top: 55%;
+    width: 90%;
+    height: 10%;
+
+    p{
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+  
+  }
+  ion-avatar{
+    margin-left: 5%;
+
+    ion-label{
+      margin-left: 5%;
+    }
+  }
+
+  .orders{
+    display: inline-block;
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  .orlabel{
+    font-family: Gilroy-SemiBold;
+  }
