@@ -17,4 +17,8 @@ export class Tab4Page implements OnInit {
     this.router.navigate(['about'])
   }
 
+  opencart(){
+    this.router.navigate(['tabs/tab3'])
+  }
+
 }
