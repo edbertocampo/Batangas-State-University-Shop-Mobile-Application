@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-mug',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MugPage implements OnInit {
 
-  constructor(private router : Router) { }
+  constructor(private router : Router, private alertController: AlertController) { }
 
   options = {
     slidesPerView:  1,
@@ -26,8 +27,13 @@ export class MugPage implements OnInit {
     this.router.navigate(['./tabs'])
   }
 
-  cart(){
-    this.router.navigate(['./tab3'])
+  async cart() {
+    const alert = await this.alertController.create({
+      message: 'Added to Cart!',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
 }
