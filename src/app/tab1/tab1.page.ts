@@ -17,6 +17,10 @@ export class Tab1Page implements OnInit {
     this.router.navigate(['mug'])
   }
 
+  openabout(){
+    this.router.navigate(['about'])
+  }
+
   opentumbler(){
     this.router.navigate(['tumbler'])
   }

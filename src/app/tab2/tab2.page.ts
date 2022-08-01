@@ -10,6 +10,10 @@ export class Tab2Page {
 
   constructor(private router:Router) {}
 
+  openabout(){
+    this.router.navigate(['about'])
+  }
+
   category1(){
     this.router.navigate(['category1'])
   }

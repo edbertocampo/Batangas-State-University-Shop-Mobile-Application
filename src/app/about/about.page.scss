@@ -1,0 +1,49 @@
+@-webkit-keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}@keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}
+  .welcome-text {
+    -webkit-animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-top: 5%;
+    margin-left: 5%;
+    line-height: 15px;
+    padding-bottom: 10%;
+  }
+
+  .welcome-text{
+    margin-top: 25%;
+    line-height: 1px;
+
+    .name{
+        font-family: Gilroy-Bold;
+    }
+    .uni-shop{
+        font-family: Gilroy-Bold;
+        color: darkred;
+    }
+    .description{
+        font-family: 'tex-gyre-adventor', sans-serif;
+        font-size: 15px;
+        font-weight:400;
+        line-height: 25px;
+        text-align: justify;
+        text-justify: auto;
+        padding-right: 5%;
+    }
+  }
+
+  .back {
+    z-index: 100;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  @-webkit-keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes slide-in-blurred-top{0%{-webkit-transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform:translateY(-1000px) scaleY(2.5) scaleX(.2);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1);transform:translateY(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+  .pic{
+    -webkit-animation:slide-in-blurred-top 0.8s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-top 0.8s cubic-bezier(.23,1.000,.32,1.000) both;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    margin-right: 5%;
+  }
