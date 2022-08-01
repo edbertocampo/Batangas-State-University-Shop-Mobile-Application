@@ -49,8 +49,20 @@
     margin-right: 0.5rem;
   }
 
-  h5{
+  h4{
     font-family: Gilroy-SemiBold;
+    font-size: large;
+  }
+
+  h5{
+    float: right;
+    font-family: Gilroy-SemiBold;
+    color: darkgreen;
+    font-weight: 800;
+  }
+
+  .select{
+    font-size:small;
   }
 
   .div{
@@ -77,7 +89,7 @@
   }
 
   .total{
-    margin-top: 40%;
+    margin-top: 35%;
   }
 
   .price{
@@ -85,6 +97,7 @@
    // margin-top: 5%;
     font-family: Gilroy-Bold;
     margin-right: 0.5rem;
+    color: darkgreen;
   }
 
   .ion-color-red-color {
