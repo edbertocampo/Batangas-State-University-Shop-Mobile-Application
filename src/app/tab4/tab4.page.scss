@@ -33,11 +33,33 @@
     margin-left: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  
-  ion-card{
-    margin-top: 55%;
-    width: 90%;
-    height: 10%;
+
+ @-webkit-keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}@keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}
+  .welcome-text {
+    -webkit-animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-top: 57%;
+    margin-left: 5%;
+    line-height: 1px;
+    height: 95%;
+  }
+    
+  .name{
+    font-family: Gilroy-Bold;
+  }
+
+  .uni-shop{
+    font-family: Gilroy-Bold;
+    color: darkred;
+  }  
+
+  .profile{
+    position: absolute;
+    top: 37%;
+    width: 94%;
+    height: 15%;
 
     p{
       margin-top: 20px;
@@ -45,8 +67,11 @@
     }
   
   }
+
   ion-avatar{
-    margin-left: 5%;
+    margin-left: 1%;
+    width: 70px;
+    height: 70px;
 
     ion-label{
       margin-left: 5%;
@@ -54,11 +79,47 @@
   }
 
   .orders{
-    display: inline-block;
-    width: 40%;
+    position: absolute;
+    top: 55%;
+    width: 95%;
     margin-top: 5%;
   }
 
+  .account{
+    position: absolute;
+    top: 63%;
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  .settings{
+    position: absolute;
+    top: 71%;
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  .help{
+    position: absolute;
+    top: 79%;
+    width: 95%;
+    margin-top: 5%;
+  }
+
+
   .orlabel{
     font-family: Gilroy-SemiBold;
+    margin-left: 0%;
   }
+
+  h3{
+    font-family: Gilroy-SemiBold;
+    font-size: 20px;
+  }
+
+  h5{
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+  }
+
+ 

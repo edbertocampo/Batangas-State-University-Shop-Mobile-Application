@@ -5,23 +5,51 @@
     <img src="./assets/images/ad.jpg" class="ad"/>
     <ion-button id="about" color="light" (click)="openabout()">?</ion-button>
   </div>
-  <ion-card>
+
+  <div class="welcome-text">
+    <p class="name">My</p>
+    <p class="uni-shop">Profile</p>
+  </div>
+  <ion-card class="profile">
     <ion-list class="avatar">
-      <ion-item class="pic">
+      <ion-item class="pic" lines="none">
   <ion-avatar slot="start">
     <img src="./assets/images/profile.png">
   </ion-avatar>
   <ion-label class="name">
-    <h4>BSU SHOP</h4>
-    <h5>-</h5>
+    <h3>Juan Dela Cruz</h3>
+    <h5>@juanitooo</h5>
+    <h5>juandelacruz@gmail.com</h5>
   </ion-label>
   </ion-item>
 </ion-list>
 </ion-card>
 <ion-card class="orders">
-<ion-item>
-  <ion-label class="orlabel">Orders</ion-label>
+<ion-item lines="none">
+  <ion-icon name="cart-outline" slot="start"></ion-icon>
+  <ion-label class="orlabel">My Cart</ion-label>
   <ion-badge slot="end">2</ion-badge>
 </ion-item>
 </ion-card>
+
+<ion-card class="account">
+  <ion-item lines="none">
+    <ion-icon name="person-outline" slot="start"></ion-icon>
+    <ion-label class="orlabel">My Account</ion-label>
+  </ion-item>
+  </ion-card>
+
+<ion-card class="settings">
+  <ion-item lines="none">
+    <ion-icon name="cog-outline" slot="start"></ion-icon>
+    <ion-label class="orlabel">Account Settings</ion-label>
+  </ion-item>
+  </ion-card>
+
+<ion-card class="help">
+  <ion-item lines="none" button (click)="openabout()">
+    <ion-icon name="help-buoy-outline" slot="start"></ion-icon>
+    <ion-label class="orlabel">About this App</ion-label>
+  </ion-item>
+  </ion-card>
 </ion-content>

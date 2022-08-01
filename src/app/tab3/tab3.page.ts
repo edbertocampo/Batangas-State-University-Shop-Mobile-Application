@@ -18,6 +18,9 @@ export class Tab3Page {
     });
 
     await alert.present();
+    setTimeout(() => {
+      this.router.navigate(['tabs']);
+    }, 1000)
   }
 
   openabout(){

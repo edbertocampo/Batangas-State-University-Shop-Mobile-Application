@@ -6,32 +6,36 @@
     <ion-button id="about" color="light" (click)="openabout()">?</ion-button>
   </div>
 
+  <div class="welcome-text">
+    <p class="name">My</p>
+    <p class="uni-shop">Cart</p>
+
   <ion-card class="div">
     <ion-list >
-      <ion-item >
+      <ion-item lines="none">
   <ion-avatar slot="start">
     <img src="./assets/images/mug1.png">
   </ion-avatar>
   <ion-label class="name">
     <ion-icon name="trash" class="trash"></ion-icon>
     <h4>Spartan Mug</h4>
-    <ion-item>
-    <ion-select placeholder="Choose Variation:" class="select">
-      <ion-select-option value="1">1</ion-select-option>
-      <ion-select-option value="2">2</ion-select-option>
-      <ion-select-option value="3">3</ion-select-option>
-      <ion-select-option value="4">4</ion-select-option>
-    </ion-select>
-  </ion-item>
+    <ion-item lines="none" class="variation">
+      <ion-select interface="popover" placeholder="Select variation">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+      </ion-select>
+    </ion-item>
     <h5>Php 150.00</h5>
   </ion-label>
   </ion-item>
-</ion-list>
+  </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-list >
-      <ion-item >
+      <ion-item lines="none">
   <ion-avatar slot="start">
     <img src="./assets/images/calendar.png">
   </ion-avatar>
@@ -42,7 +46,7 @@
     <h5>Php 250.00</h5>
   </ion-label>
   </ion-item>
-</ion-list>
+  </ion-list>
   </ion-card>
 
   <ion-card class="total">
@@ -53,4 +57,5 @@
   </ion-card>
 
   <ion-button color="red-color" (click)="presentAlert()">Place Reservation</ion-button>
+  </div>
 </ion-content>

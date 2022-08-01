@@ -34,8 +34,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-
-
   ion-card{
     margin-top: 5%;
     position: relative;
@@ -63,10 +61,7 @@
 
   .select{
     font-size:small;
-  }
-
-  .div{
-    margin-top: 55%;
+    padding-top: 5%;
   }
 
   p{
@@ -78,7 +73,6 @@
     border-radius: 20px;
     width: auto;
     margin-left: 40%;
-    margin-top: 5%;
 
     --ion-color-red-color: #bc2b3a;
   	--ion-color-red-color-rgb: 155,0,0;
@@ -89,12 +83,12 @@
   }
 
   .total{
-    margin-top: 35%;
+    position:relative;
+    margin-top: 10%;
   }
 
   .price{
     float: right;
-   // margin-top: 5%;
     font-family: Gilroy-Bold;
     margin-right: 0.5rem;
     color: darkgreen;
@@ -107,5 +101,25 @@
     --ion-color-contrast-rgb: var(--ion-color-red-color-contrast-rgb);
     --ion-color-shade: var(--ion-color-red-color-shade);
     --ion-color-tint: var(--ion-color-red-color-tint);
+  }
+
+  @-webkit-keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}@keyframes scale-up-left{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 50%;transform-origin:0 50%}}
+  .welcome-text {
+    -webkit-animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-left .5s cubic-bezier(.39,.575,.565,1.000) both;
+    font-family: 'aileron-heavy', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-top: 57%;
+    line-height: 1px;
+    height: 95%;
+  }
+    
+  .name{
+    font-family: Gilroy-Bold;
+  }
+
+  .uni-shop{
+    font-family: Gilroy-Bold;
+    color: darkred;
   }
 
