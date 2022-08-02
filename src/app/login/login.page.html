@@ -3,12 +3,28 @@
   <h1>Welcome,</h1>
   <h3>Sign in to Continue!</h3>
 
-  <form>
-    <app-input label="Username" required="true"></app-input>
-    <app-input label="Password" type="password"></app-input>
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item lines="full">
+      <ion-label position="floating" class="text">Username</ion-label>
+      <ion-input label="Username" formControlName="name"></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.required">
+      Username is required.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.minlength">
+      Name should be min 8 chars long.
+    </span>
+    <ion-item lines="full">
+      <ion-label position="floating" class="text">Password</ion-label>
+      <ion-input label="Password" type="password" formControlName="name"></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.required">
+      Password is required.
+    </span>
+    
     <a routerLink="#" class="forgot-password-link">Forgot  Password?</a>
 
-    <app-button label= "Login" (click)="home()"></app-button>
+    <ion-button type="submit" color="danger" expand="block" (click)="home()">Submit</ion-button>
   </form>
 
 <p class="footer-text">I'm a new user, <a routerLink="/register">Sign Up</a></p>

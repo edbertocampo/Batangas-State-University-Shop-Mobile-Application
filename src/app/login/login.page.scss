@@ -32,10 +32,12 @@ form{
         font-weight: 600;
         font-size: 14px;
         color: #4a4a4a;
+        padding-top: 5%;
     }
-    app-button{
+    ion-button{
         display: block;
         margin-top: 3rem;
+        font-family: Gilroy-Bold;
     }
 }
 img {
@@ -55,5 +57,11 @@ img {
         font-weight: 600;
         color: #9b0000;
     }
+  }
+
+  .text{
+    font-family: Gilroy-SemiBold;
+    font-size: 17px;
+    font-weight: 600;
   }
 

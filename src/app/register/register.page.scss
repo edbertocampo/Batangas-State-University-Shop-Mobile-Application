@@ -22,9 +22,10 @@ h3{
 form{
     margin-top: 6rem;
 
-    app-button{
+    ion-button{
         display: block;
         margin-top: 3rem;
+        font-family: Gilroy-Bold;
     }
 }
 img {
@@ -43,5 +44,11 @@ img {
         font-weight: 600;
         color: #9b0000;
     }
+  }
+
+  .text{
+    font-family: Gilroy-SemiBold;
+    font-size: 17px;
+    font-weight: 600;
   }
 
