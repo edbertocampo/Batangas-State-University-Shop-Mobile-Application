@@ -27,3 +27,7 @@ After successfully passing the testing and debugging process, the application wi
 Review/Monitoring
 
 The team will take into consideration on reviews and possible issues to arise upon running the application. Aiming to continually improve, support, and remain reliable for the application’s success.
+
+System Architecture
+
+To show how users interact with the program, the team presents the aforementioned diagrams. It depicts that a user can browse the university shop, make purchases and reserve items.
