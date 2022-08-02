@@ -21,4 +21,12 @@ export class Tab4Page implements OnInit {
     this.router.navigate(['tabs/tab3'])
   }
 
+  openaccount(){
+    this.router.navigate(['account'])
+  }
+
+  logout(){
+    this.router.navigate(['welcome'])
+  }
+
 }

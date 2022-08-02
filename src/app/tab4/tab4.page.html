@@ -10,6 +10,8 @@
     <p class="name">My</p>
     <p class="uni-shop">Profile</p>
   </div>
+
+  <div>
   <ion-card class="profile">
     <ion-list class="avatar">
       <ion-item class="pic" lines="none">
@@ -33,23 +35,25 @@
 </ion-card>
 
 <ion-card class="account">
-  <ion-item lines="none">
+  <ion-item lines="none" button (click)="openaccount()">
     <ion-icon name="person-outline" slot="start"></ion-icon>
     <ion-label class="orlabel">My Account</ion-label>
   </ion-item>
-  </ion-card>
+</ion-card>
 
 <ion-card class="settings">
-  <ion-item lines="none">
+  <ion-item lines="none" button (click)="logout()">
     <ion-icon name="cog-outline" slot="start"></ion-icon>
-    <ion-label class="orlabel">Account Settings</ion-label>
+    <ion-label class="orlabel">Log Out</ion-label>
   </ion-item>
-  </ion-card>
+</ion-card>
 
 <ion-card class="help">
   <ion-item lines="none" button (click)="openabout()">
     <ion-icon name="help-buoy-outline" slot="start"></ion-icon>
     <ion-label class="orlabel">About this App</ion-label>
   </ion-item>
-  </ion-card>
+</ion-card>
+</div>
+
 </ion-content>
