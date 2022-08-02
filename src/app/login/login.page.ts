@@ -7,6 +7,7 @@ import { Router} from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  
 
   constructor(private router:Router) { }
 
@@ -16,4 +17,5 @@ export class LoginPage implements OnInit {
   home(){
     this.router.navigate(['/tabs'])
   }
+
 }

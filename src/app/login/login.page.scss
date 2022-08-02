@@ -3,7 +3,9 @@
     padding: 0;
 }
 
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 h1 {
+    -webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
     margin-top: 15%;
     margin-bottom: 10px;
     font-size: 32px;
@@ -13,6 +15,7 @@ h1 {
 }
 
 h3{
+    -webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
     color: #939fab;
     font-family: Gilroy-SemiBold;
     font-weight: 600;
