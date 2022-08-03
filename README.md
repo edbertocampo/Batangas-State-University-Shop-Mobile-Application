@@ -2,6 +2,10 @@
 
 <br>
 
+## Special Note
+
+The codes for the app is located on the 4.0 branch. Thank you!
+
 ## Project Description
 
 Batangas State University, as a university that focuses on providing academic excellence, the need for better equipment and supplies is emerging, specifically the demands of each student on the campus. Additionally, because most of us are unable to freely get the aforementioned goods or equipment due to the pandemic's repression of the population, we will have to physically carry out going to the shop, therefore a system that would facilitate doing so would be quite helpful.
@@ -41,3 +45,4 @@ The team will take into consideration on reviews and possible issues to arise up
 ## System Architecture
 
 To show how users interact with the program, the team presents the aforementioned diagrams. It depicts that a user can browse the university shop, make purchases and reserve items.
+
