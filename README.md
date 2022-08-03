@@ -1,5 +1,7 @@
 # <img align="left" width="100" height="100" src="https://user-images.githubusercontent.com/102471784/177694343-b9f156fe-f0c9-4c75-a863-0c891f878c1a.png"> Batangas State University Shop Mobile Application
 
+<br>
+
 ## Project Description
 
 Batangas State University, as a university that focuses on providing academic excellence, the need for better equipment and supplies is emerging, specifically the demands of each student on the campus. Additionally, because most of us are unable to freely get the aforementioned goods or equipment due to the pandemic's repression of the population, we will have to physically carry out going to the shop, therefore a system that would facilitate doing so would be quite helpful.
@@ -33,6 +35,8 @@ After successfully passing the testing and debugging process, the application wi
 #### Review/Monitoring
 
 The team will take into consideration on reviews and possible issues to arise upon running the application. Aiming to continually improve, support, and remain reliable for the application’s success.
+
+
 
 ## System Architecture
 
