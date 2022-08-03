@@ -1,5 +1,11 @@
 # <img align="left" width="100" height="100" src="https://user-images.githubusercontent.com/102471784/177694343-b9f156fe-f0c9-4c75-a863-0c891f878c1a.png"> Batangas State University Shop Mobile Application
 
+## Project Description
+
+Batangas State University, as a university that focuses on providing academic excellence, the need for better equipment and supplies is emerging, specifically the demands of each student on the campus. Additionally, because most of us are unable to freely get the aforementioned goods or equipment due to the pandemic's repression of the population, we will have to physically carry out going to the shop, therefore a system that would facilitate doing so would be quite helpful.
+
+The following can assist you in resolving problems like the need to check out and be aware of the location before seeing and purchasing the product. In response, the students are permitted to check the official news and announcement for the availability and purchase the goods online because there is no guarantee that the items they desire are accessible. They will be informed whether the items they bought are available.
+
 ## Development Model
 
 The application development lifecycle consists of a multistep procedure to successfully establish the application. This involves understanding the step-by-step and repetitive processes that exist within the system. The methodology was divided into several parts to be passed through sequentially. Starting with the planning phase, what will be the design, development process, testing, deployment, review, and lastly, to launch.
