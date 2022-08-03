@@ -1,6 +1,4 @@
-# <img align="left" width="100" height="100" src="https://user-images.githubusercontent.com/102471784/177694343-b9f156fe-f0c9-4c75-a863-0c891f878c1a.png"> Batangas State University Shop Mobile Application
-
-<br>
+<img src="header.jpg">
 
 ## Special Note
 
@@ -40,9 +38,16 @@ After successfully passing the testing and debugging process, the application wi
 
 The team will take into consideration on reviews and possible issues to arise upon running the application. Aiming to continually improve, support, and remain reliable for the application’s success.
 
-
-
 ## System Architecture
 
 To show how users interact with the program, the team presents the aforementioned diagrams. It depicts that a user can browse the university shop, make purchases and reserve items.
 
+## Application Screenshots
+
+<img src="gui1.jpg">
+<img src="gui2.jpg">
+<img src="gui3.jpg">
+
+## Team Members
+
+<img src="members.jpg">
