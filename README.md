@@ -12,6 +12,8 @@ The following can assist you in resolving problems like the need to check out an
 
 ## Development Model
 
+<img src="devmodel.png">
+
 The application development lifecycle consists of a multistep procedure to successfully establish the application. This involves understanding the step-by-step and repetitive processes that exist within the system. The methodology was divided into several parts to be passed through sequentially. Starting with the planning phase, what will be the design, development process, testing, deployment, review, and lastly, to launch.
 
 #### Initiation and Requirement Analysis
