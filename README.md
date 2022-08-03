@@ -43,7 +43,7 @@ The team will take into consideration on reviews and possible issues to arise up
 ## System Architecture
 
 <img src="sequence.png">
-<img src="usecase.png">
+<img src="usecasee.png">
 
 To show how users interact with the program, the team presents the aforementioned diagrams. It depicts that a user can browse the university shop, make purchases and reserve items.
 
